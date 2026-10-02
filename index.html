@@ -180,6 +180,17 @@
   .footer-bottom{ padding-top:26px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;}
   .footer-bottom p{ font-size:12.5px; color:#9AA3B8;}
 
+
+  /* ---------- CODE LAB TEASER ---------- */
+  .codelab-strip{ background:var(--navy); color:var(--paper); padding:64px 0; border-top:6px solid var(--gold); }
+  .codelab-strip .wrap{ display:flex; align-items:center; justify-content:space-between; gap:36px; flex-wrap:wrap; }
+  .codelab-strip h2{ font-size:34px; line-height:1.2; margin:10px 0 12px; font-weight:800; }
+  .codelab-strip h2 em{ font-style:normal; color:var(--turq); }
+  .codelab-strip p.cl-copy{ max-width:640px; color:#D3DAE8; font-size:16px; }
+  .cl-tags{ display:flex; flex-wrap:wrap; gap:10px; margin-top:18px; }
+  .cl-tags span{ font-size:12.5px; font-weight:600; padding:6px 14px; border-radius:30px; border:1px solid rgba(255,255,255,0.25); color:var(--paper); }
+  .cl-code{ font-family:ui-monospace, Menlo, Consolas, monospace; font-size:13px; color:var(--gold); text-transform:none; letter-spacing:0; }
+
   @media (max-width: 860px){
     .wrap{ padding:0 20px; }
     nav{ padding:10px 20px; }
@@ -202,6 +213,7 @@
     .section-head h2{ font-size:30px; }
     .featured-event{ padding:56px 0; }
     .featured-event h2{ font-size:30px; }
+    .codelab-strip h2{ font-size:28px; }
   }
 </style>
 </head>
@@ -216,9 +228,10 @@
       <li><a href="#event">Event</a></li>
       <li><a href="#community">Community</a></li>
       <li><a href="#involved">Get Involved</a></li>
+      <li><a href="join.html#enroll">Enroll</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <a href="#involved" class="nav-cta">Get Involved</a>
+    <a href="join.html" class="nav-cta">Join Us</a>
     <button class="menu-btn">&#9776;</button>
   </nav>
 </header>
@@ -288,7 +301,7 @@
           <h3>The Crown</h3>
           <p>Mentorship and wellness programming centered on identity, sisterhood, leadership, and confidence, built around real, lasting relationships.</p>
         </div>
-        <div class="program-foot">Launching Fall 2026 &rarr;</div>
+        <a href="join.html#enroll" class="program-foot">Enroll for Fall 2026 &rarr;</a>
       </div>
       <div class="program-card compass reveal reveal-delay-1">
         <div class="program-badge"><img src="compass-emblem.png" alt="The Compass emblem" /></div>
@@ -297,7 +310,7 @@
           <h3>The Compass</h3>
           <p>Guided mentorship helping boys build direction, discipline, and character through structured activities and consistent adult connection.</p>
         </div>
-        <div class="program-foot">In development &rarr;</div>
+        <a href="join.html#interest" class="program-foot">Join the interest list &rarr;</a>
       </div>
       <div class="program-card bridge reveal reveal-delay-2">
         <div class="program-badge"><img src="bridge-emblem.png" alt="Bridge Division emblem" /></div>
@@ -306,9 +319,21 @@
           <h3>Bridge Division</h3>
           <p>Life-skills and leadership programming for high schoolers navigating the transition to adulthood, college, and career readiness.</p>
         </div>
-        <div class="program-foot">In development &rarr;</div>
+        <a href="join.html#interest" class="program-foot">Join the interest list &rarr;</a>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="codelab-strip" id="codelab" aria-labelledby="codelab-title">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">Coming Soon &middot; <span class="cl-code">print("Hello, Southland!")</span></p>
+      <h2 id="codelab-title">Nextplay <em>Code Lab</em> is on the way</h2>
+      <p class="cl-copy">We're adding coding programs so young people can go from playing games and using apps to building them. No experience needed, just curiosity.</p>
+      <div class="cl-tags"><span>Block coding &amp; Python</span><span>Build a website</span><span>Game design</span><span>Tech careers</span></div>
+    </div>
+    <a href="join.html#codelab" class="btn btn-gold">Get Code Lab Updates</a>
   </div>
 </section>
 
@@ -352,7 +377,7 @@
         </div>
         <h3>Mentor</h3>
         <p>Volunteer your time with a small group of young people in Crown, Compass, or Bridge.</p>
-        <a href="#contact" class="link">Become a mentor &rarr;</a>
+        <a href="join.html#mentor" class="link">Become a mentor &rarr;</a>
       </div>
       <div class="involved-card reveal reveal-delay-1">
         <div class="involved-icon">
@@ -362,7 +387,7 @@
         </div>
         <h3>Partner</h3>
         <p>Host a session, sponsor a program need, or co-brand a community event with us.</p>
-        <a href="#contact" class="link">Start a partnership &rarr;</a>
+        <a href="join.html#interest" class="link">Start a partnership &rarr;</a>
       </div>
       <div class="involved-card reveal reveal-delay-2">
         <div class="involved-icon">
